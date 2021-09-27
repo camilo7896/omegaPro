@@ -1,0 +1,374 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000000;
+            color: white;
+        }
+        /* Estilos para el ícono del Menú */
+        
+        .icono-menu {
+            margin: 12px 50px;
+            position: relative;
+            z-index: 7;
+            bottom: 18px;
+        }
+        
+        .icono-menu img {
+            border-radius: 8px;
+            vertical-align: top;
+            width: 42px;
+            cursor: pointer;
+            background: white;
+            padding: 0.2rem;
+            margin-left: -33px;
+        }
+        /* Estilos para el contenedor del Menú */
+        
+        .cont-menu {
+            background-color: black;
+            box-shadow: 2px 0px 5px 2px rgb(10, 136, 194);
+            width: 400px;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .5s ease;
+        }
+        /* Estilos por agregar en JavaScript */
+        
+        .active {
+            transform: translate(-600px);
+        }
+        /* Estilos para el listado del Menú */
+        
+        .cont-menu ul {
+            padding: 191px 0px 20px 0px;
+            list-style: none;
+        }
+        
+        .cont-menu ul li {
+            color: white;
+            display: block;
+            font-size: 25px;
+            text-decoration: none;
+            padding: 10px 50px;
+            cursor: pointer;
+        }
+        
+        .cont-menu ul li:hover {
+            background-color: rgb(228, 228, 228);
+            color: rgb(255, 231, 231);
+        }
+        /*Imagen del header*/
+        
+        .seccion-i {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .img-header {
+            height: 500px;
+            background-image: url(/img/2021-07-19.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .box-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        
+        .tex-header {
+            text-align: center;
+            max-width: 45%;
+            font-size: 18px;
+            margin-left: 1%;
+            color: white;
+        }
+        
+        .btn-header {
+            margin-top: 2rem;
+            padding: 0.5rem;
+        }
+        /*articulo de video*/
+        
+        .articulos {
+            margin-top: 2%;
+            padding-left: 1%;
+            padding-right: 1%;
+            display: flex;
+            text-align: center;
+        }
+        
+        .articulo-texto {
+            bottom: 10px;
+        }
+        
+        .articulo-video {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .art {
+            margin: 1rem;
+        }
+        
+        .art h2 {
+            font-size: 35px;
+        }
+        
+        .btn-info {
+            background: purple;
+            color: white;
+            font-size: 20px;
+            width: 100%;
+            padding: 0.8rem;
+            box-shadow: 0px 0px 10px 5px black;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        
+        .btn-info:hover {
+            background: red;
+        }
+        
+        .btn-invertir {
+            background-color: rgb(6, 144, 144);
+            color: white;
+        }
+        /*Ecosistema*/
+        
+        .eco-text {
+            padding-top: 2rem;
+            text-align: center;
+        }
+        
+        article {
+            border-top: 1px solid gray;
+        }
+        
+        p {
+            font-size: 20px;
+        }
+        
+        .eco-img {
+            height: 400px;
+            background-image: url(/img/negociar-precio-final-cliente-min.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .eco-img div {
+            display: none;
+        }
+        /*Por que invertir*/
+        
+        .fondo-img {
+            height: 400px;
+            background-image: url(/img/pngtree-background-with-abstract-golden-wave-image_305646.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .text {
+            padding-top: 0px;
+            font-size: 15px;
+            text-align: center;
+            color: white;
+            position: absolute;
+            left: auto;
+        }
+        
+        .btn {
+            width: auto;
+            background: rgb(232, 201, 30);
+            box-shadow: 0px 0px 10px 5px gold;
+            color: black;
+            font-size: 15px;
+        }
+        
+        .text-h3 {
+            position: absolute;
+            right: 20%;
+            top: 359%;
+            color: rgb(232, 201, 30);
+        }
+        
+        .box {
+            padding-top: 2rem;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 0px;
+        }
+        
+        .card {
+            margin: 0.5rem;
+            margin-top: 1rem;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 226px;
+            height: 100%;
+        }
+        
+        .card-img {
+            border-radius: 50%;
+        }
+        
+        .card-text {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            color: white;
+            width: 80%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .card-text p {
+            font-size: 20px;
+            width: 100%;
+        }
+        /*TESTIMONIOS*/
+        
+        .video-testimonios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+        }
+        
+        .video-testimonios iframe {
+            width: 90%;
+        }
+        
+        .titulo {
+            padding-top: 15px;
+            font-size: 40px;
+        }
+        
+        .articulo-2 {
+            color: black;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .articulo-video- img {
+            display: flex;
+            width: 200px;
+        }
+        
+        footer {
+            background-color: black;
+            height: 50px;
+        }
+        /*Responsive*/
+        
+        @media (max-width: 600px) {
+            .text {
+                margin-right: 3%;
+                margin-left: 45%;
+            }
+            .text h2 {
+                font-size: 20px;
+            }
+            .text p {
+                font-size: 15px;
+            }
+            .articulos {
+                display: flex;
+                flex-direction: column;
+            }
+            .fondo-img {
+                display: flex;
+                flex-direction: column;
+            }
+            .eco-img {
+                height: 200px;
+                background-image: url(/img/Omega-PRO-crypto-logo.jpeg);
+                background-position: inherit;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .eco-img div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .eco-img div img {
+                width: 69%;
+                padding-top: 53px;
+            }
+            .img-header {
+                height: 500px;
+                background-image: url(/img/2021-07-19.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .tex-header {
+                width: 80%;
+            }
+            .tex-header p {
+                font-size: 13px;
+            }
+            .art h2 {
+                font-size: 23px;
+            }
+        }
+        
+        @media (max-width:400) {
+            .img-header {
+                height: 500px;
+                background-image: url(/img/2021-07-19.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .text-header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .art h2 {
+                font-size: 23px;
+            }
+        }
